@@ -34,12 +34,12 @@ header {
 }
 
 .site-logo h1:hover {
-  color: #BF1363;
+  color: #bf1363;
 }
 
 header h1 {
   font-size: 3rem;
-  color: #2D3142;
+  color: #2d3142;
   font-weight: 900;
   font-family: monospace;
 }
@@ -61,7 +61,7 @@ nav > button {
 
 nav > button:hover {
   text-decoration: underline;
-  color: #BF1363;
+  color: #bf1363;
   text-underline-offset: 0.5rem;
 }
 
@@ -70,15 +70,17 @@ nav > button:hover {
 .sidebar {
   grid-area: sidebar;
   background-color: #ffe9f3;
-  color: #2D3142;
+  color: #2d3142;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .actions-wrapper {
   display: flex;
-  height: 90%;
+  height: 15%;
   width: 80%;
   flex-direction: column;
   align-items: flex-start;
@@ -91,7 +93,7 @@ nav > button:hover {
 
 .actions-wrapper button {
   background: none;
-  color: #2D3142;
+  color: #2d3142;
   font-weight: 600;
   letter-spacing: 0.2rem;
   border: none;
@@ -100,8 +102,45 @@ nav > button:hover {
 .actions-wrapper button:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
-  color: #BF1363;
+  color: #bf1363;
 }
+
+/* .sidebar > * {
+  border: 1px solid black;
+} */
+
+.project-list {
+  width: 80%;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 90%;
+  padding: 0;
+}
+
+/* .sidebar ul > * {
+  border: 1px solid black;
+} */
+
+.sidebar ul a {
+    text-decoration: none;
+    color: #2d3142;
+    font-weight: 600;
+}
+
+.sidebar ul a:hover {
+    color: #4A7856;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.sidebar ul a::selection {
+    color: #4A7856;
+}
+
 
 /* Content section */
 
@@ -128,7 +167,7 @@ nav > button:hover {
 
 .card {
   display: grid;
-grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr 1fr;
   padding: 20px;
   background-color: #2d3142;
   color: #ffe9f3;
@@ -138,24 +177,24 @@ grid-template-columns: 4fr 1fr;
 }
 
 .details {
-    display: grid;
+  display: grid;
 }
 .todo-btns {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .todo-btns .delete {
-    width: auto;
-    background-color: #BF1363;
-    border: none;
-    color: #ffe9f3;
-    font-weight: 1000;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    height: 2rem;
-    width: 2rem;
+  width: auto;
+  background-color: #bf1363;
+  border: none;
+  color: #ffe9f3;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  height: 2rem;
+  width: 2rem;
 }
 
 .card:hover {
