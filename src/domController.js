@@ -7,6 +7,9 @@ export default class domController {
   handleTodoClick(e) {
     console.log("clicked todo");
     console.log(e);
+    /*
+    
+    */
   }
 
   handleProjectClick(e) {

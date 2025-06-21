@@ -11,7 +11,7 @@ body {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 2fr 5fr;
   grid-template-rows: 1fr 8fr;
   grid-template-areas: "header header" "sidebar content";
   background-color: #ffe9f3;
@@ -76,6 +76,7 @@ nav > button:hover {
   justify-content: flex-start;
   align-items: center;
   font-size: 1.5rem;
+
 }
 
 .actions-wrapper {
