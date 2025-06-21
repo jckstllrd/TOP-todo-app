@@ -11,10 +11,27 @@ body {
 
 body {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 8fr;
   grid-template-areas: "header header" "sidebar content";
   background-color: #ffe9f3;
+  color: #2d3142;
+}
+
+/* Forms styling */
+
+.form-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+  border: 1px solid red;
+
+}
+
+.blur {
+  filter: blur(3px);
 }
 
 /* Header and Nav bar section */
@@ -76,7 +93,6 @@ nav > button:hover {
   justify-content: flex-start;
   align-items: center;
   font-size: 1.5rem;
-
 }
 
 .actions-wrapper {
@@ -127,21 +143,20 @@ nav > button:hover {
 } */
 
 .sidebar ul a {
-    text-decoration: none;
-    color: #2d3142;
-    font-weight: 600;
+  text-decoration: none;
+  color: #2d3142;
+  font-weight: 600;
 }
 
 .sidebar ul a:hover {
-    color: #4A7856;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
+  color: #4a7856;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
 .sidebar ul a::selection {
-    color: #4A7856;
+  color: #4a7856;
 }
-
 
 /* Content section */
 
