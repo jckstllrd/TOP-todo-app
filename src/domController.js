@@ -10,6 +10,9 @@ export default class domController {
     /*
     
     */
+   const todoForm = document.querySelector(".todo-form-container")
+   todoForm.showModal()
+
   }
 
   handleProjectClick(e) {
