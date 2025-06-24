@@ -12,7 +12,6 @@ export default class domController {
     */
    const todoForm = document.querySelector(".todo-form-container")
    todoForm.showModal()
-
   }
 
   handleProjectClick(e) {
@@ -25,7 +24,9 @@ export default class domController {
 
     const newTodoBtn = document.querySelector(".new-todo-btn");
     const newProjectBtn = document.querySelector(".new-project-btn");
+    const submitTodo = document.querySelector(".submit-todo")
 
+    
     newTodoBtn.addEventListener("click", this.handleTodoClick);
     newProjectBtn.addEventListener("click", this.handleProjectClick);
   }
