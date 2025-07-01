@@ -1,16 +1,9 @@
-import "./styles.css";
-console.log('here');
+import "./styles.css"
 
-import Controller from "./domController";
-
-const domController = new Controller();
-console.log('running buttons');
-
-console.log(domController);
-
-domController.initialiseButtons();
+console.log("setup project")
 
 
-if (process.env.NODE_ENV !== "production") {
-  console.log("Looks like we are in development mode!");
-}
+
+if (process.env.NODE_ENV !== 'production') {
+   console.log('Looks like we are in development mode!');
+ }
