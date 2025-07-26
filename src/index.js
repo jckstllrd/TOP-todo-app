@@ -1,8 +1,6 @@
 import "./styles.css"
-import domController from "./domController"
 
 console.log("setup project")
-console.log(domController.number);
 
 
 

@@ -1,7 +1,7 @@
 const domController = (function () {
-    const number = 5;
+    const test = 5;
 
-    return { number }
-})();
+    return { test }
+})
 
 export default domController;
